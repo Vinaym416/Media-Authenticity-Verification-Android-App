@@ -29,9 +29,41 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
+      <Stack 
+        screenOptions={{ headerShown: false }}
+        initialRouteName="GetStarted"
+      >
+        <Stack.Screen 
+          name="GetStarted" 
+          options={{ 
+            headerShown: false,
+            gestureEnabled: false
+          }} 
+          initialParams={{ initial: true }}
+        />
+        <Stack.Screen 
+          name="Login" 
+          options={{ 
+            headerShown: false,
+            gestureEnabled: true,
+          }} 
+        />
+        <Stack.Screen 
+          name="Register" 
+          options={{ 
+            headerShown: false,
+            gestureEnabled: true,
+          }} 
+        />
+        <Stack.Screen 
+          name="index" 
+          options={{ 
+            headerShown: false,
+            gestureEnabled: false,
+            // Prevent going back to login/register
+            gestureDirection: 'horizontal',
+          }} 
+        />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
