@@ -1,90 +1,66 @@
 # Dependencies
 node_modules/
-**/node_modules/
-**/__pycache__/
-*.pyc
-venv/
-.env
+.pnp
+.pnp.js
 
-# Expo specific
-.expo/
-dist/
-web-build/
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
+# Testing
+coverage/
 
-# IDE specific
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# OS specific
-.DS_Store
-Thumbs.db
-
-# Build outputs
-dist/
+# Production
 build/
-*.tsbuildinfo
+dist/
+.expo/
+web-build/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-debug.log
 
-# Local environment files
-.env.local
-.env*.local
-.env.development
-.env.test
-.env.production
+# Backend
+backend/uploads/*
+!backend/uploads/.gitkeep
 
-# Keep these directories
-!backend/
-!Frontend/
-!model/
-!model-server/
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-# Keep specific files
-!README.md
-!package.json
-!tsconfig.json
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
 
-# Frontend specific
-Frontend/.expo/*
-Frontend/.expo-shared/*
-Frontend/node_modules/*
-Frontend/web-build/*
-Frontend/dist/*
-Frontend/coverage/*
-Frontend/.env*
-Frontend/yarn-error.log
-Frontend/yarn-debug.log
-Frontend/npm-debug.log
-Frontend/*.jks
-Frontend/*.p8
-Frontend/*.p12
-Frontend/*.key
-Frontend/*.mobileprovision
-Frontend/*.orig.*
-Frontend/.metro-health-check*
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Keep Frontend directory structure
-!Frontend/
-!Frontend/app/
-!Frontend/assets/
-!Frontend/components/
-!Frontend/constants/
-!Frontend/hooks/
-!Frontend/scripts/
-!Frontend/app.json
-!Frontend/expo-env.d.ts
-!Frontend/package.json
-!Frontend/README.md
-!Frontend/tsconfig.json
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Misc
+*.log
+.tmp/
+*.swp
+*.swo
+.cache/
+.expo-shared/
