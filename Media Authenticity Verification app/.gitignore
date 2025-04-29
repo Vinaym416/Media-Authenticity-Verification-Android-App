@@ -55,3 +55,36 @@ debug.log
 !README.md
 !package.json
 !tsconfig.json
+
+# Frontend specific
+Frontend/.expo/*
+Frontend/.expo-shared/*
+Frontend/node_modules/*
+Frontend/web-build/*
+Frontend/dist/*
+Frontend/coverage/*
+Frontend/.env*
+Frontend/yarn-error.log
+Frontend/yarn-debug.log
+Frontend/npm-debug.log
+Frontend/*.jks
+Frontend/*.p8
+Frontend/*.p12
+Frontend/*.key
+Frontend/*.mobileprovision
+Frontend/*.orig.*
+Frontend/.metro-health-check*
+
+# Keep Frontend directory structure
+!Frontend/
+!Frontend/app/
+!Frontend/assets/
+!Frontend/components/
+!Frontend/constants/
+!Frontend/hooks/
+!Frontend/scripts/
+!Frontend/app.json
+!Frontend/expo-env.d.ts
+!Frontend/package.json
+!Frontend/README.md
+!Frontend/tsconfig.json
